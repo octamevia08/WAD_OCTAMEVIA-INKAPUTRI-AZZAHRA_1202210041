@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORZA FERARRI</title>
+    </head>
+    <body>
+        <h1>SMOOTH OPERATOR</h1>
+        <img id="myImage" onclick="changeImage()" src="jeno.jpeg">
+        <p>Click the image to change image.</p>
+        <script>
+            function changeImage(){
+                var image = document.getElementById('myImage');
+                if (image.src.match("bulbon")){
+                    image.src = "jeno.jpeg";
+                } else{
+                    image.src = "jake.jpg";
+                }
+            }
+        </script>
+    </body>
+</html>
